@@ -89,7 +89,7 @@
 												</div>
 											</div>
 											<div class="add-to-cart">
-												<button class="add-to-cart-btn" [attr.disabled]="(product.quantity < 1)? true:null"><i class="fa fa-shopping-cart"></i>{{product.quantity < 1 ? "out of stock" : "add to cart"}}</button>
+												<button class="add-to-cart-btn" [attr.disabled]="(product.quantity < 1)? true:null" (click)="AddToCart(product.id)"><i class="fa fa-shopping-cart"></i>{{product.quantity < 1 ? "out of stock" : "add to cart"}}</button>
 											</div>
 										</div>
 										<!-- /product -->
